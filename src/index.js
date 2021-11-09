@@ -7,4 +7,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import "./index.css";
 import App from "./App";
-reactDom.render(<App />, document.getElementById("root"));
+import { BrowserRouter } from "react-router-dom";
+reactDom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
